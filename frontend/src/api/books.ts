@@ -5,6 +5,10 @@ export async function searchBooks(query: string): Promise<{ results: SearchResul
   return apiGet<{ results: SearchResult[] }>(`/api/search?q=${encodeURIComponent(query)}`);
 }
 
+export async function getFeaturedBooks(): Promise<{ results: SearchResult[] }> {
+  return apiGet<{ results: SearchResult[] }>("/api/books/featured");
+}
+
 export async function getBooks(query?: string): Promise<SearchResult[]> {
   const qs = query ? `?q=${encodeURIComponent(query)}` : "";
   return apiGet<SearchResult[]>(`/api/books${qs}`);

@@ -6,12 +6,6 @@ interface Props {
   history: PricePoint[];
 }
 
-function getMinMax(points: PricePoint[]) {
-  if (!points.length) return { min: 0, max: 0 };
-  const prices = points.map((p) => parseFloat(p.price));
-  return { min: Math.min(...prices), max: Math.max(...prices) };
-}
-
 export default function PriceHistoryChart({ history }: Props) {
   const sorted = useMemo(
     () => [...history].sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()),
@@ -24,28 +18,30 @@ export default function PriceHistoryChart({ history }: Props) {
 
   return (
     <div className="space-y-3">
-      <h3 className="text-lg font-semibold text-gray-900">Histórico de preços</h3>
+      <h3 className="text-sm font-semibold text-title">Histórico de preços</h3>
       <div className="space-y-4">
         {platforms.map((platform) => {
           const points = sorted.filter((p) => p.platform === platform);
           if (points.length < 2) return null;
-          const { min, max } = getMinMax(points);
+          const prices = points.map((p) => parseFloat(p.price));
+          const min = Math.min(...prices);
+          const max = Math.max(...prices);
           const range = max - min || 1;
 
           return (
-            <div key={platform} className="bg-gray-50 rounded-lg p-4">
-              <p className="text-sm font-medium text-gray-700 mb-2">{platform}</p>
-              <div className="flex items-end gap-1 h-24">
+            <div key={platform} className="bg-card rounded-xl p-4 border border-border">
+              <p className="text-sm font-medium text-title mb-3">{platform}</p>
+              <div className="flex items-end gap-[2px] h-24">
                 {points.map((point, i) => {
                   const height = ((parseFloat(point.price) - min) / range) * 80 + 10;
                   return (
                     <div
                       key={i}
                       title={`${formatDate(point.timestamp)} - ${formatPrice(point.price)}`}
-                      className="flex-1 bg-blue-400 rounded-t min-h-[4px] hover:bg-blue-600 transition-colors relative group"
+                      className="flex-1 bg-gold/60 rounded-t-sm min-h-[3px] hover:bg-gold transition-colors relative group"
                       style={{ height: `${height}%` }}
                     >
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap z-10">
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block bg-card-hover text-body text-[10px] px-2 py-1 rounded whitespace-nowrap z-10 border border-border">
                         {formatDate(point.timestamp)}: {formatPrice(point.price)}
                       </div>
                     </div>

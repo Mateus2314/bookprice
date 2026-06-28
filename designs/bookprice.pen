@@ -1,1 +1,2590 @@
-{}
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "m9VQQ",
+      "x": 0,
+      "y": 0,
+      "name": "BookCard",
+      "reusable": true,
+      "width": 140,
+      "height": 200,
+      "fill": "$bg-card",
+      "cornerRadius": "$radius-md",
+      "stroke": "$border",
+      "strokeWidth": 1,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "NolOH",
+          "x": 22,
+          "y": 10,
+          "name": "Cover",
+          "width": 96,
+          "height": 96,
+          "fill": "#182218",
+          "cornerRadius": 8,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "s1EPnM",
+              "x": 8,
+              "y": 36,
+              "name": "CoverPlaceholder",
+              "fill": "#3A503A",
+              "content": "capa",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "sNJeI",
+          "x": 10,
+          "y": 112,
+          "name": "Title",
+          "fill": "$text-primary",
+          "textGrowth": "fixed-width",
+          "width": 120,
+          "content": "Titulo",
+          "lineHeight": 1.2,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "j8t7x",
+          "x": 10,
+          "y": 164,
+          "name": "Price",
+          "fill": "$accent-gold",
+          "textGrowth": "fixed-width",
+          "width": 80,
+          "content": "R$ 29,90",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "mLk6j",
+          "x": 90,
+          "y": 164,
+          "name": "StoreTag",
+          "width": 40,
+          "height": 16,
+          "fill": "$accent-dim",
+          "cornerRadius": 4,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "J0hoVZ",
+              "x": 0,
+              "y": 1,
+              "name": "StoreLabel",
+              "fill": "$text-price",
+              "content": "4 lojas",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Eeq7X",
+          "x": 10,
+          "y": 140,
+          "name": "Author",
+          "fill": "$text-secondary",
+          "textGrowth": "fixed-width",
+          "width": 120,
+          "content": "Nome do Autor",
+          "fontFamily": "Inter",
+          "fontSize": 9,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "D0DhEC",
+      "x": 180,
+      "y": 0,
+      "name": "HomeScreen",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kUtev",
+          "x": 0,
+          "y": 0,
+          "name": "Header",
+          "width": 375,
+          "height": 132,
+          "fill": "$bg-card",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tkvRc",
+              "x": 0,
+              "y": 0,
+              "name": "HeaderAccent",
+              "width": 375,
+              "height": 3,
+              "fill": "$accent-gold"
+            },
+            {
+              "type": "text",
+              "id": "C9OC3P",
+              "x": 16,
+              "y": 16,
+              "name": "Logo",
+              "fill": "$text-primary",
+              "content": "BookPrice",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gp4DI",
+              "x": 16,
+              "y": 46,
+              "name": "Tagline",
+              "fill": "$text-secondary",
+              "content": "Compare precos de livros no Brasil",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "dloEd",
+              "x": 16,
+              "y": 72,
+              "name": "SearchBox",
+              "width": 343,
+              "height": 46,
+              "fill": "$bg",
+              "cornerRadius": 12,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ebR2k",
+                  "x": 14,
+                  "y": 11,
+                  "name": "SearchIcon",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "$accent-dim",
+                  "cornerRadius": 6,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I7ZLot",
+                      "x": 4,
+                      "y": 4,
+                      "name": "IconLabel",
+                      "fill": "$text-primary",
+                      "content": "Q",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "OLnsY",
+                  "x": 48,
+                  "y": 13,
+                  "name": "Placeholder",
+                  "fill": "$text-secondary",
+                  "content": "Titulo, autor ou ISBN...",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ew8d3",
+          "x": 0,
+          "y": 148,
+          "name": "Section_Ofertas Relampago",
+          "width": 375,
+          "height": 236,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yDqpQ",
+              "x": 16,
+              "y": 0,
+              "name": "TitleRow_Ofertas Relampago",
+              "width": 343,
+              "height": 28,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "riZ8L",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SecTitle_Ofertas Relampago",
+                  "fill": "$text-primary",
+                  "content": "Ofertas Relampago",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "nFj5u",
+                  "x": 290,
+                  "y": 6,
+                  "name": "SeeAll_Ofertas Relampago",
+                  "fill": "$accent-gold",
+                  "content": "Ver mais",
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "QiUIE",
+                  "x": 0,
+                  "y": 24,
+                  "name": "GoldAccent",
+                  "width": 40,
+                  "height": 3,
+                  "fill": "$accent-gold",
+                  "cornerRadius": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j8wFV",
+              "x": 0,
+              "y": 36,
+              "name": "CardRow_Ofertas Relampago",
+              "width": 375,
+              "height": 200,
+              "layout": "none",
+              "children": [
+                {
+                  "id": "N7DGwZ",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Ofertas Relampago1",
+                  "x": 16,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "H.P. e a Ped. Filosofal"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 29,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "4 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "J.K. Rowling"
+                    }
+                  }
+                },
+                {
+                  "id": "Axao2",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Ofertas Relampago2",
+                  "x": 168,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "1984"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 19,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "George Orwell"
+                    }
+                  }
+                },
+                {
+                  "id": "xeze9",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Ofertas Relampago3",
+                  "x": 320,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "O Hobbit"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 34,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "5 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "J.R.R. Tolkien"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "w3zvX",
+          "x": 0,
+          "y": 392,
+          "name": "Section_Mais Populares",
+          "width": 375,
+          "height": 236,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CzMn7",
+              "x": 16,
+              "y": 0,
+              "name": "TitleRow_Mais Populares",
+              "width": 343,
+              "height": 28,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EBISY",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SecTitle_Mais Populares",
+                  "fill": "$text-primary",
+                  "content": "Mais Populares",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "UCftL",
+                  "x": 290,
+                  "y": 6,
+                  "name": "SeeAll_Mais Populares",
+                  "fill": "$accent-gold",
+                  "content": "Ver mais",
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VECgB",
+              "x": 0,
+              "y": 36,
+              "name": "CardRow_Mais Populares",
+              "width": 375,
+              "height": 200,
+              "layout": "none",
+              "children": [
+                {
+                  "id": "P9nttn",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Mais Populares1",
+                  "x": 16,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "Dom Casmurro"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 24,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Machado de Assis"
+                    }
+                  }
+                },
+                {
+                  "id": "jRv3e",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Mais Populares2",
+                  "x": 168,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "A Guerra dos Tronos"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 44,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "4 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "George R.R. Martin"
+                    }
+                  }
+                },
+                {
+                  "id": "KCBGQ",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Mais Populares3",
+                  "x": 320,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "O Pequeno Principe"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 15,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "2 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Antoine de Saint-Exupery"
+                    }
+                  }
+                },
+                {
+                  "id": "VzHF7",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Mais Populares4",
+                  "x": 472,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "A Rev. dos Bichos"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 18,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "George Orwell"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e4Aoe",
+          "x": 0,
+          "y": 636,
+          "name": "Section_Melhores Precos",
+          "width": 375,
+          "height": 236,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "MGLTU",
+              "x": 16,
+              "y": 0,
+              "name": "TitleRow_Melhores Precos",
+              "width": 343,
+              "height": 28,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rHMhs",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SecTitle_Melhores Precos",
+                  "fill": "$text-primary",
+                  "content": "Melhores Precos",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "s0HbYE",
+                  "x": 290,
+                  "y": 6,
+                  "name": "SeeAll_Melhores Precos",
+                  "fill": "$accent-gold",
+                  "content": "Ver mais",
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Mdyxt",
+              "x": 0,
+              "y": 36,
+              "name": "CardRow_Melhores Precos",
+              "width": 375,
+              "height": 200,
+              "layout": "none",
+              "children": [
+                {
+                  "id": "xTVaW",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Melhores Precos1",
+                  "x": 16,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "Dom Casmurro"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 24,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    }
+                  }
+                },
+                {
+                  "id": "uim8l",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Melhores Precos2",
+                  "x": 168,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "A Guerra dos Tronos"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 44,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "4 lojas"
+                    }
+                  }
+                },
+                {
+                  "id": "ZZixR",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Melhores Precos3",
+                  "x": 320,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "O Pequeno Principe"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 15,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "2 lojas"
+                    }
+                  }
+                },
+                {
+                  "id": "G04Wy",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Melhores Precos4",
+                  "x": 472,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "A Revolucao dos Bichos"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 18,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IeQj2",
+          "x": 0,
+          "y": 880,
+          "name": "Section_Lancamentos",
+          "width": 375,
+          "height": 236,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "UamB7",
+              "x": 16,
+              "y": 0,
+              "name": "TitleRow_Lancamentos",
+              "width": 343,
+              "height": 28,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cbdjl",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SecTitle_Lancamentos",
+                  "fill": "$text-primary",
+                  "content": "Lancamentos",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "z55hMf",
+                  "x": 290,
+                  "y": 6,
+                  "name": "SeeAll_Lancamentos",
+                  "fill": "$accent-gold",
+                  "content": "Ver mais",
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Li9gp",
+              "x": 0,
+              "y": 36,
+              "name": "CardRow_Lancamentos",
+              "width": 375,
+              "height": 200,
+              "layout": "none",
+              "children": [
+                {
+                  "id": "SBtvo",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Lancamentos1",
+                  "x": 16,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "O Problema dos 3 Corp."
+                    },
+                    "j8t7x": {
+                      "content": "R$ 49,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Cixin Liu"
+                    }
+                  }
+                },
+                {
+                  "id": "xrmAo",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Lancamentos2",
+                  "x": 168,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "Projeto Hail Mary"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 44,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "4 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Andy Weir"
+                    }
+                  }
+                },
+                {
+                  "id": "j6D12N",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Lancamentos3",
+                  "x": 320,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "A Biblioteca da Meia-Noite"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 34,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "3 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Matt Haig"
+                    }
+                  }
+                },
+                {
+                  "id": "tz8dU",
+                  "type": "ref",
+                  "ref": "m9VQQ",
+                  "name": "Card_Lancamentos4",
+                  "x": 472,
+                  "descendants": {
+                    "sNJeI": {
+                      "content": "O Livro dos Humanos"
+                    },
+                    "j8t7x": {
+                      "content": "R$ 39,90"
+                    },
+                    "J0hoVZ": {
+                      "content": "2 lojas"
+                    },
+                    "Eeq7X": {
+                      "content": "Joao Moreira Salles"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tlmJu",
+      "x": 595,
+      "y": 0,
+      "name": "ResultsScreen",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "n4bjk",
+          "x": 0,
+          "y": 0,
+          "name": "ResHeader",
+          "width": 375,
+          "height": 56,
+          "fill": "$bg-card",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "EfKCU",
+              "x": 0,
+              "y": 52,
+              "name": "ResAccent",
+              "width": 375,
+              "height": 4,
+              "fill": "$accent-gold"
+            },
+            {
+              "type": "text",
+              "id": "EGZQu",
+              "x": 16,
+              "y": 16,
+              "name": "BackBtn",
+              "fill": "$accent-gold",
+              "content": "Voltar",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "EXfr4",
+              "x": 80,
+              "y": 14,
+              "name": "ResTitle",
+              "fill": "$text-primary",
+              "content": "Resultados",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "c9uPt",
+          "x": 16,
+          "y": 72,
+          "name": "ResultCount",
+          "fill": "$text-secondary",
+          "content": "12 resultados para \"harry potter\"",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "TPoVI",
+          "x": 16,
+          "y": 104,
+          "name": "ResultRow1",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "exQe6",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover1",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "MDYWl",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle1",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e a Pedra Filosofal",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "WehBa",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice1",
+              "fill": "$accent-gold",
+              "content": "R$ 29,90",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "SMVZQ",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag1",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Q9YMUi",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel1",
+                  "fill": "$accent-gold",
+                  "content": "4 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hEW2A",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow1",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WrAoB",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText1",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "H6cZZ",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow1",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xAKF7",
+          "x": 16,
+          "y": 272,
+          "name": "ResultRow2",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "LELFz",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover2",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "G2MC3",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle2",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e a Camara Secreta",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "myhJY",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice2",
+              "fill": "$accent-gold",
+              "content": "R$ 34,50",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "k7eLT",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag2",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AfZAw",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel2",
+                  "fill": "$accent-gold",
+                  "content": "3 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DoQHA",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow2",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x1WlrE",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText2",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "fbwDq",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow2",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H5bFn",
+          "x": 16,
+          "y": 440,
+          "name": "ResultRow3",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "s69F6f",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover3",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "X9xwH",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle3",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e o Prisioneiro de Azkaban",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "YOTXw",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice3",
+              "fill": "$accent-gold",
+              "content": "R$ 39,90",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oh9Wy",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag3",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ra4ze",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel3",
+                  "fill": "$accent-gold",
+                  "content": "3 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XoML8",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow3",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u4iHv",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText3",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "D7Ubkf",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow3",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "We4Gv",
+          "x": 16,
+          "y": 608,
+          "name": "ResultRow4",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "MhoAh",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover4",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "QE4CJ",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle4",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e o Calice de Fogo",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "B7Kjy9",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice4",
+              "fill": "$accent-gold",
+              "content": "R$ 44,90",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "hJHRC",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag4",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OEEO6",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel4",
+                  "fill": "$accent-gold",
+                  "content": "4 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DIozD",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow4",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hl2Xw",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText4",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "EfWGS",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow4",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ydKSV",
+          "x": 16,
+          "y": 776,
+          "name": "ResultRow5",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yUi7S",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover5",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "hGWNd",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle5",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e a Ordem da Fenix",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "hgth6",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice5",
+              "fill": "$accent-gold",
+              "content": "R$ 49,90",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "q938r",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag5",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h0VLf",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel5",
+                  "fill": "$accent-gold",
+                  "content": "3 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pOFJi",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow5",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XI9P3",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText5",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "lufhM",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow5",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pe2hM",
+          "x": 16,
+          "y": 944,
+          "name": "ResultRow6",
+          "width": 343,
+          "height": 160,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hM3HP",
+              "x": 12,
+              "y": 12,
+              "name": "ResultCover6",
+              "width": 80,
+              "height": 120,
+              "fill": "#182218",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "JHvlg",
+              "x": 104,
+              "y": 12,
+              "name": "ResultTitle6",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "Harry Potter e o Enigma do Principe",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "PDmTZ",
+              "x": 104,
+              "y": 74,
+              "name": "ResultPrice6",
+              "fill": "$accent-gold",
+              "content": "R$ 42,90",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "i7hncr",
+              "x": 193,
+              "y": 74,
+              "name": "ResultStoreTag6",
+              "width": 72,
+              "height": 22,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aTlkA",
+                  "x": 0,
+                  "y": 3,
+                  "name": "ResultStoreLabel6",
+                  "fill": "$accent-gold",
+                  "content": "3 lojas",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wBpkg",
+              "x": 307,
+              "y": 65,
+              "name": "ResultArrow6",
+              "width": 28,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                8,
+                2,
+                8,
+                2
+              ],
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k1DI0Q",
+                  "x": 8,
+                  "y": 10,
+                  "name": "ResultArrowText6",
+                  "fill": "#0A0F0A",
+                  "content": ">",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "jPKBF",
+              "x": 104,
+              "y": 50,
+              "name": "AuthorRow6",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 227,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "j6Mgu",
+      "x": 1010,
+      "y": 0,
+      "name": "DetailScreen",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "x3knE6",
+          "x": 0,
+          "y": 0,
+          "name": "DetHeader",
+          "width": 375,
+          "height": 56,
+          "fill": "$bg-card",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Jw0xl",
+              "x": 0,
+              "y": 52,
+              "name": "DetAccent",
+              "width": 375,
+              "height": 4,
+              "fill": "$accent-gold"
+            },
+            {
+              "type": "text",
+              "id": "b41dI",
+              "x": 16,
+              "y": 16,
+              "name": "DetBackBtn",
+              "fill": "$accent-gold",
+              "content": "Voltar",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "sOiPQ",
+              "x": 80,
+              "y": 14,
+              "name": "DetTitle",
+              "fill": "$text-primary",
+              "content": "Detalhes",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X3ccj",
+          "x": 16,
+          "y": 72,
+          "name": "BookInfo",
+          "width": 343,
+          "height": 168,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "aI1Hm",
+              "x": 16,
+              "y": 16,
+              "name": "BigCover",
+              "width": 88,
+              "height": 132,
+              "fill": "#182218",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "nmt4B",
+              "x": 116,
+              "y": 16,
+              "name": "BookTitle",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": 211,
+              "content": "Harry Potter e a Pedra Filosofal",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "wX0u1",
+              "x": 116,
+              "y": 68,
+              "name": "BookAuthor",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 211,
+              "content": "J.K. Rowling",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "fmK37",
+              "x": 116,
+              "y": 86,
+              "name": "BookIsbn",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 211,
+              "content": "ISBN: 9788532511010",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Fdj2H",
+              "x": 116,
+              "y": 112,
+              "name": "BestPriceBadge",
+              "width": 200,
+              "height": 34,
+              "fill": "$accent-dim",
+              "cornerRadius": 8,
+              "stroke": "$accent-gold",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kKJxB",
+                  "x": 12,
+                  "y": 7,
+                  "name": "BestPriceValue",
+                  "fill": "$accent-gold",
+                  "content": "R$ 29,90 - melhor preco",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Su6XC",
+          "x": 16,
+          "y": 256,
+          "name": "PricesHeader",
+          "fill": "$text-primary",
+          "content": "Precos nas lojas",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "sHMFD",
+          "x": 16,
+          "y": 290,
+          "name": "PriceRow_Amazon",
+          "width": 343,
+          "height": 44,
+          "fill": "$bg-card",
+          "cornerRadius": 10,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HBgyb",
+              "x": 12,
+              "y": 10,
+              "name": "StoreDot_Amazon",
+              "width": 24,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JKUR2",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SDText_Amazon",
+                  "fill": "$text-primary",
+                  "content": "A",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "E2GN6Z",
+              "x": 44,
+              "y": 12,
+              "name": "StoreName_Amazon",
+              "fill": "$text-primary",
+              "content": "Amazon",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "teADe",
+              "x": 180,
+              "y": 12,
+              "name": "PriceVal_Amazon",
+              "fill": "$accent-gold",
+              "content": "R$ 29,90",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "xxpKZ",
+              "x": 268,
+              "y": 10,
+              "name": "BestTag_Amazon",
+              "width": 60,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g9LnVh",
+                  "x": 0,
+                  "y": 4,
+                  "name": "BestTagText_Amazon",
+                  "fill": "$accent-gold",
+                  "content": "Melhor",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N2CLk",
+          "x": 16,
+          "y": 342,
+          "name": "PriceRow_Shopee",
+          "width": 343,
+          "height": 44,
+          "fill": "$bg-card",
+          "cornerRadius": 10,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "F94GzF",
+              "x": 12,
+              "y": 10,
+              "name": "StoreDot_Shopee",
+              "width": 24,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yXK33",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SDText_Shopee",
+                  "fill": "$text-primary",
+                  "content": "S",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "y9tGKF",
+              "x": 44,
+              "y": 12,
+              "name": "StoreName_Shopee",
+              "fill": "$text-primary",
+              "content": "Shopee",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "ewvYN",
+              "x": 180,
+              "y": 12,
+              "name": "PriceVal_Shopee",
+              "fill": "$accent-gold",
+              "content": "R$ 34,90",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E096z",
+          "x": 16,
+          "y": 394,
+          "name": "PriceRow_Magalu",
+          "width": 343,
+          "height": 44,
+          "fill": "$bg-card",
+          "cornerRadius": 10,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "I6hQCR",
+              "x": 12,
+              "y": 10,
+              "name": "StoreDot_Magalu",
+              "width": 24,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X6LOZ",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SDText_Magalu",
+                  "fill": "$text-primary",
+                  "content": "M",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Pvjv5",
+              "x": 44,
+              "y": 12,
+              "name": "StoreName_Magalu",
+              "fill": "$text-primary",
+              "content": "Magalu",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "Uibh5",
+              "x": 180,
+              "y": 12,
+              "name": "PriceVal_Magalu",
+              "fill": "$accent-gold",
+              "content": "R$ 39,90",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lxOVy",
+          "x": 16,
+          "y": 446,
+          "name": "PriceRow_Submarino",
+          "width": 343,
+          "height": 44,
+          "fill": "$bg-card",
+          "cornerRadius": 10,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "g3rqyx",
+              "x": 12,
+              "y": 10,
+              "name": "StoreDot_Submarino",
+              "width": 24,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b0I0Xc",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SDText_Submarino",
+                  "fill": "$text-primary",
+                  "content": "S",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Lmeu0",
+              "x": 44,
+              "y": 12,
+              "name": "StoreName_Submarino",
+              "fill": "$text-primary",
+              "content": "Submarino",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "F9Z8S",
+              "x": 180,
+              "y": 12,
+              "name": "PriceVal_Submarino",
+              "fill": "$accent-gold",
+              "content": "R$ 42,00",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i2kD4",
+          "x": 16,
+          "y": 498,
+          "name": "PriceRow_Americanas",
+          "width": 343,
+          "height": 44,
+          "fill": "$bg-card",
+          "cornerRadius": 10,
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XJ1Cc",
+              "x": 12,
+              "y": 10,
+              "name": "StoreDot_Americanas",
+              "width": 24,
+              "height": 24,
+              "fill": "$accent-dim",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aJdl1",
+                  "x": 0,
+                  "y": 4,
+                  "name": "SDText_Americanas",
+                  "fill": "$text-primary",
+                  "content": "A",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "KwvXn",
+              "x": 44,
+              "y": 12,
+              "name": "StoreName_Americanas",
+              "fill": "$text-primary",
+              "content": "Americanas",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "pwTAW",
+              "x": 180,
+              "y": 12,
+              "name": "PriceVal_Americanas",
+              "fill": "$accent-gold",
+              "content": "R$ 45,00",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "AouPW",
+          "x": 16,
+          "y": 558,
+          "name": "ChartHeader",
+          "fill": "$text-primary",
+          "content": "Historico de precos",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "nUfEV",
+          "x": 16,
+          "y": 590,
+          "name": "ChartFrame",
+          "width": 343,
+          "height": 210,
+          "fill": "$bg-card",
+          "cornerRadius": "$radius-md",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "pMFWa",
+              "x": 16,
+              "y": 14,
+              "name": "ChartLabel",
+              "fill": "$text-secondary",
+              "content": "Evolucao nos ultimos 30 dias",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "d7TAI2",
+              "x": 300,
+              "y": 14,
+              "name": "MaxLabel",
+              "fill": "$text-secondary",
+              "content": "R$50",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 8,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "BlsYQ",
+              "x": 300,
+              "y": 92,
+              "name": "MidLabel",
+              "fill": "$text-secondary",
+              "content": "R$35",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 8,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "CS6ks",
+              "x": 300,
+              "y": 170,
+              "name": "MinLabel",
+              "fill": "$text-secondary",
+              "content": "R$20",
+              "textAlign": "right",
+              "fontFamily": "Inter",
+              "fontSize": 8,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "RzltY",
+              "x": 16,
+              "y": 36,
+              "name": "GridTop",
+              "width": 270,
+              "height": 1,
+              "fill": "#1E301E"
+            },
+            {
+              "type": "frame",
+              "id": "aifZD",
+              "x": 16,
+              "y": 106,
+              "name": "GridMid",
+              "width": 270,
+              "height": 1,
+              "fill": "#1E301E"
+            },
+            {
+              "type": "frame",
+              "id": "J9468J",
+              "x": 16,
+              "y": 176,
+              "name": "GridBot",
+              "width": 270,
+              "height": 1,
+              "fill": "#1E301E"
+            },
+            {
+              "type": "frame",
+              "id": "oJabq",
+              "x": 16,
+              "y": 106,
+              "name": "Bar1",
+              "width": 22,
+              "height": 70,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "arrxw",
+              "x": 12,
+              "y": 182,
+              "name": "DayLabel1",
+              "fill": "$text-secondary",
+              "content": "05/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "yQuCL",
+              "x": 50,
+              "y": 121,
+              "name": "Bar2",
+              "width": 22,
+              "height": 55,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "cp1ph",
+              "x": 46,
+              "y": 182,
+              "name": "DayLabel2",
+              "fill": "$text-secondary",
+              "content": "08/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "cUcgL",
+              "x": 84,
+              "y": 91,
+              "name": "Bar3",
+              "width": 22,
+              "height": 85,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "V1Wrc",
+              "x": 80,
+              "y": 182,
+              "name": "DayLabel3",
+              "fill": "$text-secondary",
+              "content": "11/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "d0c3Lf",
+              "x": 118,
+              "y": 136,
+              "name": "Bar4",
+              "width": 22,
+              "height": 40,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "c2R4v",
+              "x": 114,
+              "y": 182,
+              "name": "DayLabel4",
+              "fill": "$text-secondary",
+              "content": "14/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "R7HOR6",
+              "x": 152,
+              "y": 111,
+              "name": "Bar5",
+              "width": 22,
+              "height": 65,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "gQalq",
+              "x": 148,
+              "y": 182,
+              "name": "DayLabel5",
+              "fill": "$text-secondary",
+              "content": "17/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "a6EH3",
+              "x": 186,
+              "y": 126,
+              "name": "Bar6",
+              "width": 22,
+              "height": 50,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vDaoI",
+              "x": 182,
+              "y": 182,
+              "name": "DayLabel6",
+              "fill": "$text-secondary",
+              "content": "20/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "JKFYX",
+              "x": 220,
+              "y": 101,
+              "name": "Bar7",
+              "width": 22,
+              "height": 75,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "PeY7z",
+              "x": 216,
+              "y": 182,
+              "name": "DayLabel7",
+              "fill": "$text-secondary",
+              "content": "23/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "D5HPC",
+              "x": 254,
+              "y": 116,
+              "name": "Bar8",
+              "width": 22,
+              "height": 60,
+              "fill": "$accent-gold",
+              "cornerRadius": [
+                4,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "text",
+              "id": "YVzbe",
+              "x": 250,
+              "y": 182,
+              "name": "DayLabel8",
+              "fill": "$text-secondary",
+              "content": "26/06",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 7,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#0A0F0A"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#111811"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#F0F5F0"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#88A088"
+    },
+    "text-price": {
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#059669"
+    },
+    "accent-hover": {
+      "type": "color",
+      "value": "#047857"
+    },
+    "border": {
+      "type": "color",
+      "value": "#1E301E"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 14
+    },
+    "spacing-xs": {
+      "type": "number",
+      "value": 4
+    },
+    "spacing-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "spacing-md": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "bg-card-hover": {
+      "type": "color",
+      "value": "#182218"
+    },
+    "accent-dim": {
+      "type": "color",
+      "value": "#065F46"
+    },
+    "success-bg": {
+      "type": "color",
+      "value": "#064E3B"
+    },
+    "success-text": {
+      "type": "color",
+      "value": "#6EE7B7"
+    },
+    "accent-gold": {
+      "type": "color",
+      "value": "#F59E0B"
+    }
+  },
+  "fileToken": "841b2f92-37b1-4e7f-a92d-eabc1255b6b1"
+}

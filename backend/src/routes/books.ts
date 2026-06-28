@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { getDb } from "../db";
-import { books } from "../db/schema";
-import { eq, ilike, or } from "drizzle-orm";
+import { books, prices, platforms } from "../db/schema";
+import { eq, ilike, or, and, desc } from "drizzle-orm";
 import { z } from "zod";
 import { zValidator } from "../middleware";
 
@@ -22,6 +22,37 @@ router.get("/", async (c) => {
     )
   ).limit(50);
   return c.json(results);
+});
+
+router.get("/featured", async (c) => {
+  const db = getDb(c.env as any);
+  const all = await db.select().from(books).limit(50);
+
+  const results = await Promise.all(all.map(async (book) => {
+    const priceList = await db.select({
+      platformName: platforms.name,
+      platformSlug: platforms.slug,
+      price: prices.price,
+      url: prices.url,
+      affiliateUrl: prices.affiliateUrl,
+      currency: prices.currency,
+    }).from(prices)
+      .innerJoin(platforms, eq(prices.platformId, platforms.id))
+      .where(and(eq(prices.bookId, book.id), eq(prices.inStock, 1)))
+      .orderBy(desc(prices.timestamp));
+
+    const bestPrice = priceList.length > 0
+      ? priceList.reduce((min, p) => parseFloat(p.price) < parseFloat(min.price) ? p : min)
+      : null;
+
+    return {
+      ...book,
+      prices: priceList,
+      bestPrice: bestPrice ? { platform: bestPrice.platformName, price: bestPrice.price, affiliateUrl: bestPrice.affiliateUrl } : null,
+    };
+  }));
+
+  return c.json({ results });
 });
 
 router.get("/:isbn", async (c) => {

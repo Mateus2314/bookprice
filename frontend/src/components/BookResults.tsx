@@ -1,5 +1,5 @@
 import type { SearchResult } from "../types";
-import BookCard from "./BookCard";
+import ResultCard from "./ResultCard";
 
 interface Props {
   results: SearchResult[];
@@ -10,15 +10,17 @@ export default function BookResults({ results, onSelect }: Props) {
   if (!results.length) return null;
 
   return (
-    <div className="space-y-4">
-      <p className="text-sm text-gray-500">{results.length} livro(s) encontrado(s)</p>
-      {results.map((book) => (
-        <BookCard
-          key={book.id}
-          book={book}
-          onClick={onSelect ? () => onSelect(book) : undefined}
-        />
-      ))}
+    <div className="space-y-3">
+      <p className="text-xs text-body px-4">{results.length} livro(s) encontrado(s)</p>
+      <div className="px-4 space-y-3">
+        {results.map((book) => (
+          <ResultCard
+            key={book.id}
+            book={book}
+            onClick={onSelect ? () => onSelect(book) : undefined}
+          />
+        ))}
+      </div>
     </div>
   );
 }
