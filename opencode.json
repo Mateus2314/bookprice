@@ -1,0 +1,82 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "dev-web",
+  "agent": {
+    "dev-web": {
+      "description": "Full-stack web developer for BookPrice - book price comparison site. Use for general web development tasks.",
+      "mode": "primary"
+    },
+    "frontend": {
+      "description": "React/TypeScript/Tailwind frontend specialist. Use for UI components and pages.",
+      "mode": "subagent"
+    },
+    "backend": {
+      "description": "TypeScript/Hono/Cloudflare Workers backend specialist. Use for API routes, database (Drizzle + Neon), and business logic.",
+      "mode": "subagent"
+    },
+    "scraper": {
+      "description": "Playwright web scraping specialist. Use for extracting book prices from Amazon, Shopee, Magalu, and other platforms.",
+      "mode": "subagent"
+    },
+    "cloudflare": {
+      "description": "Cloudflare infrastructure specialist. Use for deploying Workers, Pages, managing DNS, KV, R2, and CRON triggers.",
+      "mode": "subagent"
+    }
+  },
+  "mcp": {
+    "markitdown": {
+      "type": "local",
+      "command": ["C:\\Users\\173330\\AppData\\Roaming\\Python\\Python312\\Scripts\\markitdown-mcp.exe"],
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp"],
+      "enabled": true
+    },
+    "neon": {
+      "type": "remote",
+      "url": "https://mcp.neon.tech/mcp",
+      "enabled": true
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "cloudflare": {
+      "type": "remote",
+      "url": "https://mcp.cloudflare.com/mcp",
+      "oauth": {},
+      "enabled": true
+    },
+    "render": {
+      "type": "remote",
+      "url": "https://mcp.render.com/mcp",
+      "headers": {
+        "Authorization": "Bearer rnd_al9u6HJRBtmgV0g7TpmPoccRpR9x"
+      },
+      "enabled": false
+    },
+    "vercel": {
+      "type": "remote",
+      "url": "https://mcp.vercel.com",
+      "enabled": false
+    },
+    "pencil": {
+      "type": "local",
+      "command": [
+        "C:\\Program Files\\Pencil\\resources\\app.asar.unpacked\\out\\mcp-server-windows-x64.exe",
+        "--app",
+        "desktop",
+        "--agent",
+        "openCodeCLI"
+      ],
+      "enabled": true
+    }
+  }
+}

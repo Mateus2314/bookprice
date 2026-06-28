@@ -1,0 +1,63 @@
+# Node
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Wrangler / Cloudflare Workers
+.wrangler/
+.dev.vars
+
+# Frontend
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+
+# Exports
+export/
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+docker-data/
+
+# Playwright MCP cache
+.playwright-mcp/
+
+# OpenCode auth secrets
+.opencode/supabase-auth.json
+
+# PDF downloads
+*.pdf
+
+# Screenshots and temp images
+*.screenshot.*
+screenshot-*.png
+
+# Playwright debug artifacts
+network-images.json
+page-snapshot.md
+
+# Environment
+.env*
+!env.example
