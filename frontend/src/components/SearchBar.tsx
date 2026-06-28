@@ -25,7 +25,7 @@ export default function SearchBar({ onSearch, loading }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
         {loading ? "Buscando..." : "Buscar"}
       </button>

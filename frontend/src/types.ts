@@ -17,3 +17,15 @@ export interface SearchResult {
   prices: PriceInfo[];
   bestPrice: { platform: string; price: string; affiliateUrl: string | null } | null;
 }
+
+export interface PricePoint {
+  platform: string;
+  price: string;
+  timestamp: string;
+}
+
+export interface PriceDetail {
+  isbn: string;
+  currentPrices: PriceInfo[];
+  history: PricePoint[];
+}
